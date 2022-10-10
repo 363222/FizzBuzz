@@ -2,34 +2,22 @@
 public class DoWhileLoops
 {
     public void run() {
-        int i = 5;
-        int k = 15;
-        int a = 0;
-        int b = 10;
-        
-        do {
-            System.out.println(" i is " + i + " but is less than 15 ");
-            i += 1;
-        } while (i < 5);
-        
-        
-        do{
-            System.out.println(" k is " + k + " but is greater than 5 ");
-            k-= 1;
-        } while (k > 5); 
-        
-            
-        do {
-            System.out.println(" a is " + a + " but is less than 10 " );
-            System.out.println(" b is " + b + " but is less than 20 ");
-            a += 1;
-            b += 1;
-        } while (a < 10 && b <=20);
+    for (int i = 0; i <= 15; i = i += 1) {
+            System.out.println(" i is equal to " + i);
     }
     
-    public static void main(String[] args)
-    {
-        DoWhileLoops hw = new DoWhileLoops();
-        hw.run();
+    for (int j = 10; j != 0; j = j + (-2)) {
+        System.out.println(" j is equal to " +j);
     }
+    
+    for (int k =10; k !=0; k = k +(-3)) {
+        System.out.println(" k is equal to " + k); 
+    }
+}
+
+public static void main(String[] args)
+{
+    DoWhileLoops hw = new DoWhileLoops();
+    hw.run();
+    } 
 }
